@@ -4,10 +4,12 @@ import java.io.*;
 import javax.servlet.*;
 import javax.servlet.http.*;
 
+@SuppressWarnings("serial")
 public class ServicePollHandler extends HttpServlet {
 	public void init() throws ServletException {
+		@SuppressWarnings("unused")
 		ServletContext ctx = getServletContext();
-	}
+	}//init
 
 	public void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		resp.setContentType("text/html"); 
@@ -40,9 +42,9 @@ public class ServicePollHandler extends HttpServlet {
 		out.print("<script>");
 		out.print("var wait=setTimeout(\"document.frmRequestDetails.submit();\", 5000);"); //Refresh every 5 seconds
 		out.print("</script>");
-	}
+	}//doGet
 
 	public void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		doGet(req, resp);
- 	}
-}
+ 	}//doPost
+}//ServicePollHandler
