@@ -34,7 +34,11 @@ public class ServiceHandler extends HttpServlet {
 		if (taskNumber == null){
 			taskNumber = new String("T" + jobNumber);
 			jobNumber++;
-		}else{
+		
+		}
+		
+		else
+		{
 			RequestDispatcher dispatcher = req.getRequestDispatcher("/poll");
 			dispatcher.forward(req,resp);
 		}
@@ -58,14 +62,18 @@ public class ServiceHandler extends HttpServlet {
 		out.print("<font color=\"0000ff\">");	
 		BufferedReader br = new BufferedReader(new InputStreamReader(part.getInputStream()));
 		String line = null;
+		
 		while ((line = br.readLine()) != null) {
 			out.print(line);
 		}
 		
 	out.print("</font>");	
 		}
+	
+	
 
 	public void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		doGet(req, resp);
- 	}
-}
+ 	}//end do post 
+	
+}//end service handler

@@ -9,7 +9,7 @@ public class Document
 	public Document(int docId, String document){
 		this.docId = docId;
 		this.document = document;
-	}//Document
+}
 
 	//gets and sets 
 	public int getDocId() {
