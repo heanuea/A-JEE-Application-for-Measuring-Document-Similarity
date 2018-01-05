@@ -1,9 +1,10 @@
 # DocumentSimilarity
 
-# **_Project Overview_** 
+## **_Project Overview_** 
 #### *Object Oriented Design principles & Patterns Module - Lecturer: [John Healy](https://github.com/bradanfeasa) - 4th Year Software Development*
 A Java web application that enables two or more text documents to be compared for similarity.
-- Your implementation should include the following features:
+
+Your implementation should include the following features:
 
 1. A document or URL should be specified or selected from a web browser and then
 dispatched to a servlet instance running under Apache Tomcat.
