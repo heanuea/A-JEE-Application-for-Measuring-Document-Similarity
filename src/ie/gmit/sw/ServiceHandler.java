@@ -10,6 +10,7 @@ import javax.servlet.annotation.*;
 @MultipartConfig(fileSizeThreshold=1024*1024*2,
                  maxFileSize=1024*1024*10,
                  maxRequestSize=1024*1024*50)
+
 public class ServiceHandler extends HttpServlet {
 	@SuppressWarnings("unused")
 	private String environmentalVariable = null;
@@ -60,6 +61,7 @@ public class ServiceHandler extends HttpServlet {
 		
 		out.print("<h3>Uploaded Document</h3>");	
 		out.print("<font color=\"0000ff\">");	
+		
 		BufferedReader br = new BufferedReader(new InputStreamReader(part.getInputStream()));
 		String line = null;
 		

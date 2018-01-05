@@ -11,6 +11,10 @@ public class Document
 		this.document = document;
 }
 
+	public Document(String id, Object document2) {
+		// TODO Auto-generated constructor stub
+	}
+
 	//gets and sets 
 	public int getDocId() {
 		return docId;
