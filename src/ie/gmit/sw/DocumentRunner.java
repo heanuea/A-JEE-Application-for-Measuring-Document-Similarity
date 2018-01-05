@@ -16,10 +16,7 @@ public class DocumentRunner {
 	
 	public static void main(String[] args)
 	{
-		ObjectContainer db = Db4oEmbedded.openFile(Db4oEmbedded.newConfiguration(), DB4OFILENAME);
-		DatabaseImp dbImp = new DatabaseImp();//DatabaseImp
-
-
-	}
+		
+	}	
 	
 }//end class
