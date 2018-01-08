@@ -4,7 +4,7 @@ import java.io.IOException;
 import com.db4o.*;
 
 
-@SuppressWarnings("rawtypes")
+@SuppressWarnings({ "rawtypes", "unused" })
 
 public class DatabaseImp implements DatabaseInterface {
 	public static final String DB4OFILENAME = "";
