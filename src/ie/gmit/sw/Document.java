@@ -20,8 +20,8 @@ public class Document
 		return docId;
 	}
 
-	public void setDocId(int docId) {
-		this.docId = docId;
+	public void setDocId(int newId) {
+		this.docId = newId;
 	}
 
 	public String getDocument() {

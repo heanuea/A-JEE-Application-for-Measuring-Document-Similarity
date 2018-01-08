@@ -55,7 +55,7 @@ public class DatabaseImp implements DatabaseInterface {
 		ObjectSet result = db.queryByExample(d);
 		Document found = (Document) result.next();
 		db.delete(found);
-		found.setDocId(newId);
+		found.setDocument(newId);
 		db.store(found);
 		System.out.println("Updated ID to: " + found.getDocId());
 	}
